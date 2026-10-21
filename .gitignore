@@ -44,3 +44,12 @@ _fix_paths.py
 .vscode/
 .idea/
 *.swp
+
+# 清理掉的死代码/历史资料/测试产物（2026-10-21 大扫除）
+patches/
+存档/
+corpus_demo/
+夜间运行日志.txt
+90天止血计划.md
+C盘空间清单.md
+建环考研*.md
