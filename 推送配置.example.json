@@ -1,0 +1,24 @@
+{
+  "启用": [
+    "ntfy"
+  ],
+  "ntfy": {
+    "topic": "改成你自己的随机串，比如 my-ai-track-8f3k2",
+    "server": "https://ntfy.sh"
+  },
+  "pushplus": {
+    "token": ""
+  },
+  "serverchan": {
+    "sendkey": ""
+  },
+  "email": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "user": "",
+    "password": "",
+    "to": ""
+  },
+  "浏览地址": "",
+  "浏览端口": 8765
+}

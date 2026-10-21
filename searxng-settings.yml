@@ -1,0 +1,40 @@
+use_default_settings: true
+server:
+  secret_key: "随便填一串长随机字符"
+  bind_address: "0.0.0.0"
+  port: 8888
+search:
+  formats:
+    - html
+    - json
+  # 关键：任何一个引擎卡住都不能拖死整个请求（原来没有这一行）
+  max_request_timeout: 6.0
+engines:
+  - name: baidu
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: 360search
+    disabled: false
+  - name: sogou
+    disabled: false
+  # 新增：学术向引擎，论文类问题靠它们
+  - name: arxiv
+    disabled: false
+  - name: crossref
+    disabled: false
+  # 以下都是必然超时或被墙的，关掉
+  - name: google
+    disabled: true
+  - name: duckduckgo
+    disabled: true
+  - name: brave
+    disabled: true
+  - name: wikipedia
+    disabled: true
+  - name: wikidata
+    disabled: true
+  - name: google cse
+    disabled: true
+  - name: google cse images
+    disabled: true

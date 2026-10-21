@@ -1,0 +1,26 @@
+use_default_settings: true
+server:
+  secret_key: "随便填一串长随机字符"
+  bind_address: "0.0.0.0"
+  port: 8888
+search:
+  formats:
+    - html
+    - json
+engines:
+  - name: baidu
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: 360search
+    disabled: false
+  - name: sogou
+    disabled: false
+  - name: google
+    disabled: true
+  - name: duckduckgo
+    disabled: true
+  - name: brave
+    disabled: true
+  - name: wikipedia
+    disabled: true
